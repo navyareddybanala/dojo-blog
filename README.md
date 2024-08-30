@@ -1,35 +1,33 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Simple Blog App
 
 ### `npm start`
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-In the project directory, you can run: npm start
+In the project directory, you can run: `npm start`. 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ## Create a local JSON server and perform CRUD operations
 
-Step 1:
-    Create db.json file under src/data folder and write the code
+`Step 1`:\
+    Create db.json file under src/data folder and write the code.\
         Refer src/data/db.json file
 
-Step 2:
-    Install JSON Server under same project
+`Step 2`:\
+    Install JSON Server under same project\
         npm install -g Json-server 
 
-Step 3:
-    Open Command Prompt  under root folder and write following command
-    Please specify the port. Else it defaults to port 3000 where the react local dev is running already
+`Step 3`:\
+    Open Command Prompt  under root folder and write following command\
+    Please specify the port. Else it defaults to port 3000 where the react local dev is running already\
         npx json-server --watch src/data/db.json --port 8000
 
-Step 4:
-    Use the endpoint given in the terminal
+`Step 4`:\
+    Use the endpoint given in the terminal\
         My Endpoint: http://localhost:8000/blogs
 
-Step 5:
-    Perform GET, POST, DELETE operations using Fetch
+`Step 5`:\
+    Perform GET, POST, DELETE operations using Fetch\
         Refer useFetch() custom hook for get request
